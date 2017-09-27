@@ -22,8 +22,8 @@ var PlaceService = (function () {
         return this.http.get(this.placesUrl)
             .toPromise()
             .then(function (response) {
-            // console.log(response.json().Items);
-            return response.json().data;
+            console.log(response.json().Items);
+            return response.json();
         })
             .catch(this.handleError);
     };

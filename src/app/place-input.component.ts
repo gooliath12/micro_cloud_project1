@@ -6,9 +6,29 @@ import {PlaceService} from './place.service';
 @Component({
   selector: 'place-input',
   template: `
-  <input [(ngModel)]="requestData.id" placeholder="ID"/>
-  <input [(ngModel)]="requestData.country" placeholder="Country">
-  <input [(ngModel)]="requestData.company" placeholder="Company Name">
+<div>
+  Address ID: <input [(ngModel)]="requestData.Address_id" placeholder="Address ID"/>
+</div>
+<div>
+  City: <input [(ngModel)]="requestData.City" placeholder="City"/>
+</div>
+<div>
+  Country: <input [(ngModel)]="requestData.Country" placeholder="Country"/>
+</div>
+<div>
+  Street 1:<input [(ngModel)]="requestData.Street_1" placeholder="Street"/>
+</div>
+<div>
+  Street 2:<input [(ngModel)]="requestData.Street_2" placeholder="Street"/>
+</div>
+<div>
+  Postal Code: <input [(ngModel)]="requestData.Postal_Code" placeholder="Postal Code"/>
+</div>
+<div>
+  State: <input [(ngModel)]="requestData.Sttea" placeholder="State"/>
+</div>
+
+  
   <div>
     <button (click)="onAdd()"> Add </button>
     <button (click)="onUpdate()"> Update </button>

@@ -18,8 +18,8 @@ export class PlaceService {
                    .toPromise()
                    .then(
                        function(response){
-                        // console.log(response.json().Items);
-                        return response.json().data as Place[];
+                        console.log(response.json().Items);
+                        return response.json() as Place[];
                     }
                     //    response => response.json().data as Place[]
                     )
