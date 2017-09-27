@@ -6,29 +6,30 @@ import {PlaceService} from './place.service';
 @Component({
   selector: 'place-input',
   template: `
-<div>
-  Address ID: <input [(ngModel)]="requestData.Address_id" placeholder="Address ID"/>
-</div>
-<div>
-  City: <input [(ngModel)]="requestData.City" placeholder="City"/>
-</div>
-<div>
-  Country: <input [(ngModel)]="requestData.Country" placeholder="Country"/>
-</div>
-<div>
-  Street 1:<input [(ngModel)]="requestData.Street_1" placeholder="Street"/>
-</div>
-<div>
-  Street 2:<input [(ngModel)]="requestData.Street_2" placeholder="Street"/>
-</div>
-<div>
-  Postal Code: <input [(ngModel)]="requestData.Postal_Code" placeholder="Postal Code"/>
-</div>
-<div>
-  State: <input [(ngModel)]="requestData.Sttea" placeholder="State"/>
-</div>
+<table>
+  <tr>
+    Address ID:&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="requestData.Address_id" placeholder="Address ID"/>
+  </tr>
+  <tr>
+    City:&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="requestData.City" placeholder="City"/>
+  </tr>
+  <tr>
+    Country:&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="requestData.Country" placeholder="Country"/>
+  </tr>
+  <tr>
+    Street 1:&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="requestData.Street_1" placeholder="Street"/>
+  </tr>
+  <tr>
+    Street 2:&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="requestData.Street_2" placeholder="Street"/>
+  </tr>
+  <tr>
+    Postal Code:&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="requestData.Postal_Code" placeholder="Postal Code"/>
+  </tr>
+  <tr>
+    State:&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="requestData.Sttea" placeholder="State"/>
+  </tr>
+</table>
 
-  
   <div>
     <button (click)="onAdd()"> Add </button>
     <button (click)="onUpdate()"> Update </button>

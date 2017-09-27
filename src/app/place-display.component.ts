@@ -10,7 +10,7 @@ import { Place } from './place';
     </div>
     <ul *ngIf='responseData'>
         <li *ngFor="let row of responseData">
-            <div>{{row.id}}  {{row.country}}  {{row.company}}</div>
+            <div>{{row.Address_id}}  {{row.City}}  {{row.Country}}</div>
         </li>
     </ul>
   `,

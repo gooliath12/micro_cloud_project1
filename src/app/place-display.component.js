@@ -25,7 +25,7 @@ __decorate([
 PlaceDisplayComponent = __decorate([
     core_1.Component({
         selector: 'place-display',
-        template: "\n    <div *ngIf='responseStatus'>\n        responseStatus\n    </div>\n    <ul *ngIf='responseData'>\n        <li *ngFor=\"let row of responseData\">\n            <div>{{row.id}}  {{row.country}}  {{row.company}}</div>\n        </li>\n    </ul>\n  ",
+        template: "\n    <div *ngIf='responseStatus'>\n        responseStatus\n    </div>\n    <ul *ngIf='responseData'>\n        <li *ngFor=\"let row of responseData\">\n            <div>{{row.Address_id}}  {{row.City}}  {{row.Country}}</div>\n        </li>\n    </ul>\n  ",
     })
 ], PlaceDisplayComponent);
 exports.PlaceDisplayComponent = PlaceDisplayComponent;
