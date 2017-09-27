@@ -9,7 +9,7 @@ const withCookieOptions = new RequestOptions({ withCredentials: true });
 
 @Injectable()
 export class PlaceService {
-    private placesUrl = 'http://node-express-env.82fjyxpzxd.us-east-1.elasticbeanstalk.com/Person';
+    private placesUrl = 'http://addressservice-env.qyspwjiw5j.us-east-1.elasticbeanstalk.com/Addresses/';
     private headers = new Headers({'Content-Type': 'application/json'});
     constructor(private http: Http) { }
 
@@ -18,7 +18,7 @@ export class PlaceService {
                    .toPromise()
                    .then(
                        function(response){
-                        console.log(response.json());
+                        // console.log(response.json().Items);
                         return response.json().data as Place[];
                     }
                     //    response => response.json().data as Place[]

@@ -15,14 +15,14 @@ var withCookieOptions = new http_1.RequestOptions({ withCredentials: true });
 var PlaceService = (function () {
     function PlaceService(http) {
         this.http = http;
-        this.placesUrl = 'http://node-express-env.82fjyxpzxd.us-east-1.elasticbeanstalk.com/Person';
+        this.placesUrl = 'http://addressservice-env.qyspwjiw5j.us-east-1.elasticbeanstalk.com/Addresses/';
         this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
     }
     PlaceService.prototype.getPlaces = function () {
         return this.http.get(this.placesUrl)
             .toPromise()
             .then(function (response) {
-            console.log(response.json());
+            // console.log(response.json().Items);
             return response.json().data;
         })
             .catch(this.handleError);
